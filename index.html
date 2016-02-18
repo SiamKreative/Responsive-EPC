@@ -9,80 +9,91 @@
 	<title>Energy &amp; Greenhouse Gas Graphs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
 	<!--[if lt IE 7]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
+
+	<div class="about">
+		<h1>Energy Performance Certificate</h1>
+		<p>If you want to show the ratings for energy efficiency and greenhouse gas on your website, feel free to use those responsive widgets.</p>
+		<a class="pure-button pure-button-primary" href="https://github.com/SiamKreative/Responsive-Energy-Performance-Certificate/archive/master.zip">Download</a> <a class="pure-button" href="#">Github</a>
+	</div>
 	
-	<div class="graphs">
-		<div class="graph graph_energy" data-selected="3">
-			<h3>Energy Efficiency Rating</h3>
-			<div class="caption caption_top">Very energy efficient - lower running costs</div>
-			<div class="bar bar1" data-grade="A">
-				<span class="value">≤ 50</span>
-				<span class="grade">A</span>
+	<div class="pure-g">
+		<div class="pure-u-1-2">
+			<div class="graph graph_energy" data-selected="3">
+				<h3>Energy Efficiency Rating</h3>
+				<div class="caption caption_top">Very energy efficient<br>(lower running costs)</div>
+				<div class="bar bar1" data-grade="A">
+					<span class="value">≤ 50</span>
+					<span class="grade">A</span>
+				</div>
+				<div class="bar bar2" data-grade="B">
+					<span class="value">51 - 90</span>
+					<span class="grade">B</span>
+				</div>
+				<div class="bar bar3" data-grade="C">
+					<span class="value">90 - 150</span>
+					<span class="grade">C</span>
+				</div>
+				<div class="bar bar4" data-grade="D">
+					<span class="value">151 - 230</span>
+					<span class="grade">D</span>
+				</div>
+				<div class="bar bar5" data-grade="E">
+					<span class="value">231 - 330</span>
+					<span class="grade">E</span>
+				</div>
+				<div class="bar bar6" data-grade="F">
+					<span class="value">331 - 450</span>
+					<span class="grade">F</span>
+				</div>
+				<div class="bar bar7" data-grade="G">
+					<span class="value">> 450</span>
+					<span class="grade">G</span>
+				</div>
+				<div class="caption caption_bottom">Not energy efficient<br>(higher running costs)</div>
 			</div>
-			<div class="bar bar2" data-grade="B">
-				<span class="value">51 - 90</span>
-				<span class="grade">B</span>
-			</div>
-			<div class="bar bar3" data-grade="C">
-				<span class="value">90 - 150</span>
-				<span class="grade">C</span>
-			</div>
-			<div class="bar bar4" data-grade="D">
-				<span class="value">151 - 230</span>
-				<span class="grade">D</span>
-			</div>
-			<div class="bar bar5" data-grade="E">
-				<span class="value">231 - 330</span>
-				<span class="grade">E</span>
-			</div>
-			<div class="bar bar6" data-grade="F">
-				<span class="value">331 - 450</span>
-				<span class="grade">F</span>
-			</div>
-			<div class="bar bar7" data-grade="G">
-				<span class="value">> 450</span>
-				<span class="grade">G</span>
-			</div>
-			<div class="caption caption_bottom">Not energy efficient - higher running costs</div>
 		</div>
 		
-		<div class="graph graph_gas" data-selected="5">
-			<h3>Environmental (CO<sub>2</sub>) Impact Rating</h3>
-			<div class="caption caption_top">Very environmentally friendly - lower CO<sub>2</sub> emissions</div>
-			<div class="bar bar1" data-grade="A">
-				<span class="value">≤ 5</span>
-				<span class="grade">A</span>
+		<div class="pure-u-1-2">
+			<div class="graph graph_gas" data-selected="5">
+				<h3>Environmental (CO<sub>2</sub>) Impact Rating</h3>
+				<div class="caption caption_top">Very environmentally friendly<br>(lower CO<sub>2</sub> emissions)</div>
+				<div class="bar bar1" data-grade="A">
+					<span class="value">≤ 5</span>
+					<span class="grade">A</span>
+				</div>
+				<div class="bar bar2" data-grade="B">
+					<span class="value">6 - 10</span>
+					<span class="grade">B</span>
+				</div>
+				<div class="bar bar3" data-grade="C">
+					<span class="value">11 - 20</span>
+					<span class="grade">C</span>
+				</div>
+				<div class="bar bar4" data-grade="D">
+					<span class="value">21 - 35</span>
+					<span class="grade">D</span>
+				</div>
+				<div class="bar bar5" data-grade="E">
+					<span class="value">36 - 55</span>
+					<span class="grade">E</span>
+				</div>
+				<div class="bar bar6" data-grade="F">²
+					<span class="value">56 - 80</span>
+					<span class="grade">F</span>
+				</div>
+				<div class="bar bar7" data-grade="G">
+					<span class="value">> 80</span>
+					<span class="grade">G</span>
+				</div>
+				<div class="caption caption_bottom">Not environmentally friendly<br>(higher CO<sub>2</sub> emissions)</div>
 			</div>
-			<div class="bar bar2" data-grade="B">
-				<span class="value">6 - 10</span>
-				<span class="grade">B</span>
-			</div>
-			<div class="bar bar3" data-grade="C">
-				<span class="value">11 - 20</span>
-				<span class="grade">C</span>
-			</div>
-			<div class="bar bar4" data-grade="D">
-				<span class="value">21 - 35</span>
-				<span class="grade">D</span>
-			</div>
-			<div class="bar bar5" data-grade="E">
-				<span class="value">36 - 55</span>
-				<span class="grade">E</span>
-			</div>
-			<div class="bar bar6" data-grade="F">²
-				<span class="value">56 - 80</span>
-				<span class="grade">F</span>
-			</div>
-			<div class="bar bar7" data-grade="G">
-				<span class="value">> 80</span>
-				<span class="grade">G</span>
-			</div>
-			<div class="caption caption_bottom">Not environmentally friendly - higher CO<sub>2</sub> emissions</div>
 		</div>
 	</div>
 	
