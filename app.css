@@ -3,11 +3,11 @@ Clearfix
  */
 .bar:before,
 .bar:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 .bar:after {
-    clear: both;
+	clear: both;
 }
 
 /**
