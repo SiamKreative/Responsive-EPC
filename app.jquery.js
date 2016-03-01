@@ -66,7 +66,7 @@ $(function () {
 		var current = $(el).attr('data-epcSelected');
 
 		$.each(type, function (index, val) {
-			if ((val.start < current) && (current < val.end)) {
+			if ((val.start <= current) && (current <= val.end)) {
 				$(el).find('.epc_bar:eq(' + index + ')').addClass('epc_bar_selected');
 			}
 		});
