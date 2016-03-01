@@ -62,7 +62,7 @@ $(function () {
 
 	$('.epc_graph').each(function (index, el) {
 
-		var type = eval($(el).attr('data-type'));
+		var type = eval($(el).attr('data-epcType'));
 		var current = $(el).attr('data-epcSelected');
 
 		$.each(type, function (index, val) {

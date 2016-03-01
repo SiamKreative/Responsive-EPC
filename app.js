@@ -64,7 +64,7 @@ var graphs = document.getElementsByClassName('epc_graph'),
 
 for (i = 0; i < l; i++) {
 	cur = graphs[i];
-	var type = eval(cur.getAttribute('data-type'));
+	var type = eval(cur.getAttribute('data-epcType'));
 	var current = cur.getAttribute('data-epcSelected');
 
 	for (index = 0; index < type.length; ++index) {
