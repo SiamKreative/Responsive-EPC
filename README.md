@@ -1,7 +1,7 @@
 # Responsive Energy Performance Certificate
 If you want to show the ratings for energy efficiency and greenhouse gas on your website, feel free to use those responsive widgets.
 
-![screenshot](https://cloud.githubusercontent.com/assets/1778633/13138363/5a114c18-d659-11e5-8b05-26c95f39acb4.png)
+![screenshot](https://cloud.githubusercontent.com/assets/1778633/13424907/18d378a8-dfd6-11e5-840c-493f8aecd413.png)
 
 Learn more about [Energy Performance Certificate](https://en.wikipedia.org/wiki/Energy_Performance_Certificate).
 
