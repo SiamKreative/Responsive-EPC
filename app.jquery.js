@@ -67,7 +67,7 @@ $(function () {
 
 		$.each(type, function (index, val) {
 			if ((val.start <= current) && (current <= val.end)) {
-				$(el).find('.epc_bar:eq(' + index + ')').addClass('epc_bar_selected');
+				$(el).find('.epc_bar:eq(' + index + ')').addClass('epc_bar_selected').append('<span class="epc_val">' + current + '</span>');
 			}
 		});
 

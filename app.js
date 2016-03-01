@@ -69,7 +69,9 @@ for (i = 0; i < l; i++) {
 
 	for (index = 0; index < type.length; ++index) {
 		if ((type[index].start <= current) && (current <= type[index].end)) {
-			cur.getElementsByClassName('epc_bar')[index].className += ' epc_bar_selected';
+			var bar = cur.getElementsByClassName('epc_bar')[index];
+			bar.className += ' epc_bar_selected';
+			bar.innerHTML = bar.innerHTML + '<span class="epc_val">' + current + '</span>';
 		}
 	}
 }

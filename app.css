@@ -49,6 +49,9 @@ Clearfix
 	margin-top: -20px;
 	right: -20px;
 }
+.epc_bar_selected {
+	font-weight: bold;
+}
 .epc_caption > em {
 	display: block;
 	font-size: 80%;
