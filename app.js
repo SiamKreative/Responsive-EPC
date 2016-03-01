@@ -1,3 +1,4 @@
+// Create range array() for Energy Efficiency Rating
 var energy = [{
 	"letter": "A",
 	"start": 0,
@@ -28,6 +29,7 @@ var energy = [{
 	"end": Infinity
 }];
 
+// Create range array() for Environmental (CO2) Impact Rating
 var gas = [{
 	"letter": "A",
 	"start": 0,
@@ -58,18 +60,27 @@ var gas = [{
 	"end": Infinity
 }];
 
+// Define variables & Cache selectors
 var graphs = document.getElementsByClassName('epc_graph'),
 	l = graphs.length,
-	i, cur, index;
+	i, graph, index;
 
+// Loop through each graph
 for (i = 0; i < l; i++) {
-	cur = graphs[i];
-	var type = eval(cur.getAttribute('data-epcType'));
-	var current = cur.getAttribute('data-epcSelected');
+	graph = graphs[i];
 
+	// Get the type of graph and value
+	var type = eval(graph.getAttribute('data-epcType'));
+	var current = graph.getAttribute('data-epcSelected');
+
+	// Loop through the graph ranges
 	for (index = 0; index < type.length; ++index) {
+
+		// Check if range contains value
 		if ((type[index].start <= current) && (current <= type[index].end)) {
-			var bar = cur.getElementsByClassName('epc_bar')[index];
+
+			// Add active class and show value
+			var bar = graph.getElementsByClassName('epc_bar')[index];
 			bar.className += ' epc_bar_selected';
 			bar.innerHTML = bar.innerHTML + '<span class="epc_val">' + current + '</span>';
 		}
