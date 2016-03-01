@@ -60,11 +60,16 @@ var gas = [{
 
 var graphs = document.getElementsByClassName('epc_graph'),
 	l = graphs.length,
-	i, cur;
+	i, cur, index;
 
 for (i = 0; i < l; i++) {
 	cur = graphs[i];
-	var index = cur.getAttribute('data-epcSelected');
-	var barSelected = cur.getElementsByClassName('epc_bar' + index);
-	barSelected[0].className += ' epc_bar_selected';
+	var type = eval(cur.getAttribute('data-type'));
+	var current = cur.getAttribute('data-epcSelected');
+
+	for (index = 0; index < type.length; ++index) {
+		if ((type[index].start <= current) && (current <= type[index].end)) {
+			cur.getElementsByClassName('epc_bar')[index].className += ' epc_bar_selected';
+		}
+	}
 }
